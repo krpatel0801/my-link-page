@@ -3,30 +3,78 @@
 <head>
   <title>My Secret Page</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <style>
     body{
+      margin:0;
+      padding:0;
       display:flex;
+      flex-direction:column;
       justify-content:center;
       align-items:center;
       height:100vh;
-      background:black;
-      color:white;
-      font-family:Arial;
+      background: linear-gradient(135deg, #ff416c, #ff4b2b);
+      font-family: Arial;
       text-align:center;
+      color:white;
+    }
+
+    h1{
+      font-size:32px;
+      margin-bottom:40px;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    .btn{
+      padding:12px 25px;
+      margin:10px;
+      border:none;
+      border-radius:30px;
+      font-size:16px;
+      cursor:pointer;
+      transition:0.3s ease;
+      box-shadow:0 5px 15px rgba(0,0,0,0.3);
+    }
+
+    .btn1{
+      background:white;
+      color:#ff416c;
+    }
+
+    .btn1:hover{
+      background:#ffe6ec;
+      transform:scale(1.1);
+    }
+
+    .btn2{
+      background:#000;
+      color:white;
+    }
+
+    .btn2:hover{
+      background:#333;
+      transform:scale(1.1);
+    }
+
+    @keyframes fadeIn{
+      from{opacity:0; transform:translateY(-20px);}
+      to{opacity:1; transform:translateY(0);}
     }
   </style>
 </head>
+
 <body>
-  <h1>Hello 👋<br>This page is only for you 😎🔥</h1>
- <br>
-  <br>
-  <br/>
- 
+
+  <h1>Hello 👋 <br>This page is only for you 😎🔥</h1>
+
   <a href="second.html">
-    <button >surprice babe</button>
+    <button class="btn btn1">💌 Surprise Babe</button>
   </a>
+
   <a href="third.html">
-    <button> i like you !!</button>
+    <button class="btn btn2">❤️ I Like You !!</button>
   </a>
+
 </body>
 </html>
+
