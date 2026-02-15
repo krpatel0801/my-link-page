@@ -1,9 +1,110 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Second Page</title>
+  <title>Our Story ❤️</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #141e30, #243b55);
+      font-family: 'Georgia', serif;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .story-box {
+      max-width: 500px;
+      background: rgba(255,255,255,0.1);
+      padding: 30px;
+      border-radius: 15px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #ff9a9e;
+    }
+
+    p {
+      line-height: 1.8;
+      font-size: 17px;
+      margin-bottom: 15px;
+    }
+
+    .end {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 20px;
+      color: #ffccd5;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    .back-btn {
+      display: block;
+      margin: 20px auto 0;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 20px;
+      background: #ff9a9e;
+      color: black;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .back-btn:hover {
+      background: #ffc3a0;
+    }
+
+  </style>
 </head>
-<body style="text-align:center; margin-top:100px; font-family:Arial;">
-  <h1>Welcome to Second Page 🎉</h1>
+
+<body>
+
+  <div class="story-box">
+    <h1>Our Story ❤️</h1>
+
+    <p>
+      I never believed in special connections…  
+      until you walked into my life.
+    </p>
+
+    <p>
+      At first, it was just simple conversations.  
+      But slowly, those conversations became the best part of my day.
+    </p>
+
+    <p>
+      Your smile, your words, your presence —  
+      they started meaning more than I expected.
+    </p>
+
+    <p>
+      I don’t know what the future holds…  
+      but I know one thing —  
+      I feel something real with you.
+    </p>
+
+    <div class="end">
+      Maybe this is the beginning of something beautiful… 💖
+    </div>
+
+    <a href="index.html">
+      <button class="back-btn">Back</button>
+    </a>
+
+  </div>
+
 </body>
 </html>
