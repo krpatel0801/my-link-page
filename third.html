@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>For Someone Special ❤️</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #ff4e50, #fc913a);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: 'Arial', sans-serif;
+    }
+
+    .letter {
+      background: white;
+      padding: 30px;
+      max-width: 400px;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+      text-align: center;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    h1 {
+      color: #ff4e50;
+    }
+
+    p {
+      font-size: 18px;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    .heart {
+      font-size: 30px;
+      animation: beat 1s infinite;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+
+    @keyframes beat {
+      0% {transform: scale(1);}
+      50% {transform: scale(1.2);}
+      100% {transform: scale(1);}
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 20px;
+      background: #ff4e50;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #e03e40;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="letter">
+    <h1>Hey ❤️</h1>
+    <p>
+      From the moment you came into my life,  
+      everything feels more beautiful.  
+      Your smile makes my day brighter,  
+      and your presence makes my world complete.  
+    </p>
+
+    <p>
+      I don’t know what the future holds,  
+      but I know I want you in it. 💕
+    </p>
+
+    <div class="heart">❤️</div>
+
+    <button onclick="showMessage()">Click for Surprise</button>
+  </div>
+
+  <script>
+    function showMessage() {
+      alert("I really like you... Will you be mine? 💍❤️");
+    }
+  </script>
+
+</body>
+</html>
