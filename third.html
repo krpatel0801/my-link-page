@@ -65,6 +65,24 @@
     button:hover {
       background: #e03e40;
     }
+    .btn2 {
+  margin-top: 15px;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 30px;
+  background: linear-gradient(to right, #ff758c, #ff7eb3);
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.btn2:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px #ff7eb3;
+}
+
   </style>
 </head>
 <body>
@@ -86,7 +104,12 @@
     <div class="heart">❤️</div>
 
     <button onclick="showMessage()">Click for Surprise</button>
-  </div>
+    <br>
+
+    <a href="four.html">
+    <button class="btn2">Read My Heart 💖</button>
+    </a>
+    </div>
 
   <script>
     function showMessage() {
