@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Someone Special 💖</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background: linear-gradient(135deg,#ff6a88,#ff99ac,#ffb6b9);
+    overflow:hidden;
+}
+
+/* Glass Card */
+.card{
+    background: rgba(255,255,255,0.2);
+    backdrop-filter: blur(15px);
+    padding:40px;
+    border-radius:20px;
+    text-align:center;
+    width:350px;
+    color:white;
+    box-shadow:0 10px 30px rgba(0,0,0,0.2);
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.card h1{
+    font-size:28px;
+    margin-bottom:15px;
+}
+
+.card p{
+    font-size:15px;
+    margin-bottom:25px;
+}
+
+/* Buttons */
+.btn{
+    display:inline-block;
+    padding:12px 25px;
+    border:none;
+    border-radius:30px;
+    background:white;
+    color:#ff4e7a;
+    font-weight:600;
+    cursor:pointer;
+    transition:0.4s;
+    margin:8px;
+}
+
+.btn:hover{
+    background:#ff4e7a;
+    color:white;
+    transform:scale(1.1);
+}
+
+/* Floating Hearts */
+.heart{
+    position:absolute;
+    bottom:-20px;
+    font-size:20px;
+    animation: float 6s linear infinite;
+    color:white;
+}
+
+/* Animations */
+@keyframes float{
+    0%{transform:translateY(0) rotate(0deg); opacity:1;}
+    100%{transform:translateY(-100vh) rotate(360deg); opacity:0;}
+}
+
+@keyframes fadeIn{
+    from{opacity:0; transform:translateY(30px);}
+    to{opacity:1; transform:translateY(0);}
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+    <h1>My Forever ❤️</h1>
+    <p>
+        You are the reason my world feels magical.
+        Every moment with you is my favorite memory.
+        I am lucky to have you in my life. 💕
+    </p>
+
+    <button class="btn" onclick="showLove()">Click for Magic ✨</button>
+    <button class="btn" onclick="alert('I Love You So Much ❤️')">Special Message 💌</button>
+</div>
+
+<script>
+function showLove(){
+    alert("You are my today and all of my tomorrows 💖");
+}
+
+/* Floating hearts generator */
+setInterval(()=>{
+    const heart = document.createElement("div");
+    heart.classList.add("heart");
+    heart.innerHTML = "💖";
+    heart.style.left = Math.random()*100 + "vw";
+    heart.style.fontSize = Math.random()*20 + 15 + "px";
+    document.body.appendChild(heart);
+
+    setTimeout(()=>{
+        heart.remove();
+    },6000);
+},500);
+</script>
+
+</body>
+</html>
